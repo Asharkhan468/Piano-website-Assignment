@@ -124,15 +124,16 @@ nav .fa-solid{
         cursor: pointer;
     }
     .fa-bars{
-        position: absolute;
+        position:absolute;
         font-size: 20px;
         top: 28px;
         left: 10px; 
-        text-align: right; 
+         
 
     }
     nav .fa-solid{
         display: block;
+        text-align: right;
     }
     .row{
         padding-top: 150px;
