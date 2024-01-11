@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.center{
+    text-align: center;
+    font-family: 'Courier New';
+    padding-top: 20px;
+}
+.color{
+    color:grey;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    padding: 10px;
+    
+    
+    
+}
+.nav-bar{
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-top: 5px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #000;
+   
+}
+
+
+.col-1 {width: 8.33%;}
+.co1-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col8 {width: 66.66%;}
+.col-9 {width:75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width:100%;}
+
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.img-resp{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    font-family: 'Courier New';
+    padding-top:20px;
+
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+
+
+@media (max-width:768px){
+    
+    .container{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text{
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-family: 'Courier New';
+        padding-top:20px;
+    
+    }
+    .nav-bar{
+        position: absolute;
+        height: 100vh;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
+        width: 200px;
+        z-index: 2;
+        background-color: #ffffff;
+        top: 0;
+        left:-200px;
+        transition: 0.5s;
+    }
+    .nav-bar ul li{
+        display: block;
+    }
+    .nav-bar .fa-solid{
+        display: block;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        position: absolute;
+        font-size: 20px;
+        top: 28px;
+        left: 10px; 
+        text-align: right; 
+
+    }
+    nav .fa-solid{
+        display: block;
+    }
+    .row{
+        padding-top: 150px;
+        
+    }
+    
+    
+}

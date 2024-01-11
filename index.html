@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Piano website Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="center">
+        <h3 class="color">THE </h3><h1>ANALOG</h1><h2 class="color">SPECIALISTS</h2>
+    </div>
+
+    
+        <nav>
+            <div class="nav-bar" id="nav-bar">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FOR SALE</a></li>
+                <li><a href="">REPAIRS</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="row">
+            <div class="container">
+            <div class="col-4">
+                <img src="assets/img1.jpg" alt="" class="img-resp" >
+            </div>
+            <div class="col-4">
+                <img src="assets/img2.jpg" alt="" class="img-resp"  >
+            </div>
+            <div class="col-4">
+                <img src="assets/img4.jpg" alt="" class="img-resp"  >
+            </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <p>We specialize in the sales and repair of classic keyboards, in particular the Fender Rhodes, Wurlitzer EP200, Hohner Clavinet.</p>
+        </div>
+
+        <script>
+            var navLinks = document.getElementById("nav-bar");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+        </script>
+
+      
+
+    
+       
+   
+    
+</body>
+
+</html>
